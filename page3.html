@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hi!</title>
+    <link rel="stylesheet" href="/css/page1.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Catamaran"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Changa One"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Calligraffitti"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bodySwag-rose">
+    <header class="menu-rose">
+      <div>
+        <br />
+        <a href="/index.html" class="menuBtn-rose" value="button">Home</a>
+        <a href="/page2.html" class="menuBtn-rose" value="button">About Me</a>
+        <a href="/page3.html" class="menuBtn-rose" value="button">Projects</a>
+        <button class="menuBtn-rose" id="themeSwitch">DarkMode</button>
+      </div>
+      <h1 class="text-center portTitle-rose" style="color: white">
+        Wessel Ammerlaan
+      </h1>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row" style="margin-top: 50px">
+          <div class="col-sm">
+            <div class="card" style="width: 15rem">
+              <img
+                class="card-img-top"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Tic_tac_toe.svg/1200px-Tic_tac_toe.svg.png"
+                alt="tictactoe card"
+                height="200px"
+                width="200px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">TicTacToe</h5>
+                <p class="card-text">this is the game tictactoe made by me</p>
+                <a href="/tictactoe/index.html" class="btn btn-primary"
+                  >Play TicTacToe</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card" style="width: 15rem">
+              <img
+                class="card-img-top"
+                src="data:image/png;base64,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"
+                alt="BMI calc card"
+                height="200px"
+                width="200px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">BMI Calculator</h5>
+                <p class="card-text">
+                  wanna check ur bmi? well this one doesnt work so dont go here
+                </p>
+                <a href="./page5.html" class="btn btn-primary">Calculate</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card" style="width: 15rem">
+              <img
+                class="card-img-top"
+                src="https://imgc.artprintimages.com/img/print/math-symbols-square-colorful-boxes_u-l-f92lxg0.jpg?h=550&p=0&w=550&background=fbfbfb"
+                alt="CALC"
+                height="200px"
+                width="200px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Calculator</h5>
+                <p class="card-text">cool calculator also made by me</p>
+                <a href="./page4.html" class="btn btn-primary">Calculate</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card" style="width: 15rem">
+            <img
+              class="card-img-top"
+              src="./Files/aaaaaaaaaaaaaaaaa.png"
+              alt="CALC"
+              height="200px"
+              width="200px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Discord bot</h5>
+              <p class="card-text">sick discord im coding right now!</p>
+              <a href="./discordpage.html" class="btn btn-primary">Calculate</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <div class="container-fluid">
+      <div id="footer">
+          <div class="row">
+              <div class="col-12 text-light text-center footer-rose fixed-bottom">
+                <p style="color: rgb(255, 255, 255); font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;">© 2021 Wessel Ammerlaan</p>
+              </div>
+          </div>
+      </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+      integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+      integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

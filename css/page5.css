@@ -1,0 +1,19 @@
+.BMI-calc {
+  background-color: #23272a;
+  color: whitesmoke;
+  margin-left: 30vw;
+  margin-right: 30vw;
+  margin-top: 2.5vh;
+  margin-bottom: 10vw;
+  border-radius: 20px;
+  padding: 8px;
+}
+
+.calc {
+  background-color: #2c2f33;
+  color: #99aab5;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: #2c2f33;
+  margin-left: 42vw;
+}

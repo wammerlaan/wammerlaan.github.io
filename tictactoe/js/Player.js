@@ -25,3 +25,6 @@ export default class Player {
     return Math.floor(this.points / 10 + 1);
   }
 }
+
+let test = 214536798053;
+test

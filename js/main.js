@@ -1,3 +1,5 @@
+import { getAllFilms } from "./StudioGhibli.js";
+
 const darkModeBtn = document.querySelector(`#themeSwitch`);
 const BMIcalc = document.querySelector(`#calc`);
 const heightInpt = document.querySelector(`.heightInpt`);
@@ -30,27 +32,32 @@ const darkTheme = function (event) {
 
 darkModeBtn.addEventListener("click", darkTheme);
 
-BMIcalc.addEventListener("click", function (event) {
-  console.log(heightInpt.value);
-  console.log(weightInpt.value);
-  let heightanswer = heightInpt.value;
-  let weightanswer = weightInpt.value;
-  let BMIanswer = (heightanswer * weightanswer) / 703;
-  console.log(BMIanswer);
-  let BMImessage = ``;
-  if (BMIanswer > 40 && BMIanswer < 65) {
-    BMImessage = `Your BMI is ` + BMIanswer + ` and that is extremely obese.`;
-  } else if (BMIanswer > 30 && BMIanswer < 40) {
-    BMImessage = `Your BMI is ` + BMIanswer + ` and that is obese.`;
-  } else if (BMIanswer > 25 && BMIanswer < 30) {
-    BMImessage = `Your BMI is ` + BMIanswer + ` and that is overweight.`;
-  } else if (BMIanswer > 18 && BMIanswer < 25) {
-    BMImessage = `Your BMI is ` + BMIanswer + ` and that is good!`;
-  } else if (BMIanswer < 18) {
-    BMImessage = `Your BMI is ` + BMIanswer + ` and this is underweight.`;
-  } else {
-    BMImessage = `Please put in normal numbers`;
-  }
-  const showAnswer = document.querySelector(`.answer`);
-  showAnswer.textContent = BMImessage;
-});
+// BMIcalc.addEventListener("click", function (event) {
+//   console.log(heightInpt.value);
+//   console.log(weightInpt.value);
+//   let heightanswer = heightInpt.value;
+//   let weightanswer = weightInpt.value;
+//   let BMIanswer = (heightanswer * weightanswer) / 703;
+//   console.log(BMIanswer);
+//   let BMImessage = ``;
+//   if (BMIanswer > 40 && BMIanswer < 65) {
+//     BMImessage = `Your BMI is ` + BMIanswer + ` and that is extremely obese.`;
+//   } else if (BMIanswer > 30 && BMIanswer < 40) {
+//     BMImessage = `Your BMI is ` + BMIanswer + ` and that is obese.`;
+//   } else if (BMIanswer > 25 && BMIanswer < 30) {
+//     BMImessage = `Your BMI is ` + BMIanswer + ` and that is overweight.`;
+//   } else if (BMIanswer > 18 && BMIanswer < 25) {
+//     BMImessage = `Your BMI is ` + BMIanswer + ` and that is good!`;
+//   } else if (BMIanswer < 18) {
+//     BMImessage = `Your BMI is ` + BMIanswer + ` and this is underweight.`;
+//   } else {
+//     BMImessage = `Please put in normal numbers`;
+//   }
+//   const showAnswer = document.querySelector(`.answer`);
+//   showAnswer.textContent = BMImessage;
+// });
+async function main() {
+  const allFilms = await getAllFilms();
+  console.log(allFilms);
+}
+main();

@@ -80,7 +80,7 @@ function checkWinner() {
    * Again what more needs to be done, make a short todolist
    */
 
-  //WINLINE1 CODE
+  //WINLINE CODE
   for (let j = 0; j < winlines.length; j++) {
     const winline = winlines[j];
     xCounter = 0;

@@ -1,5 +1,3 @@
-import { getAllFilms } from "./StudioGhibli.js";
-
 const darkModeBtn = document.querySelector(`#themeSwitch`);
 const BMIcalc = document.querySelector(`#calc`);
 const heightInpt = document.querySelector(`.heightInpt`);
@@ -29,8 +27,9 @@ const darkTheme = function (event) {
   }
   console.log(bodySwag);
 };
-
+console.log(darkModeBtn);
 darkModeBtn.addEventListener("click", darkTheme);
+
 
 // BMIcalc.addEventListener("click", function (event) {
 //   console.log(heightInpt.value);
@@ -56,8 +55,4 @@ darkModeBtn.addEventListener("click", darkTheme);
 //   const showAnswer = document.querySelector(`.answer`);
 //   showAnswer.textContent = BMImessage;
 // });
-async function main() {
-  const allFilms = await getAllFilms();
-  console.log(allFilms);
-}
-main();
+

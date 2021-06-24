@@ -20,6 +20,8 @@ const darkTheme = function (event) {
   const title = document.querySelector(`.titlep1-rose`);
   title.classList.toggle("titlep1-dark");
 
+  localStorage.setItem()
+
   if (darkModeBtn.textContent == `DarkMode`) {
     darkModeBtn.textContent = `LightMode`;
   } else {

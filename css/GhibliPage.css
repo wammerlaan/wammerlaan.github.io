@@ -1,8 +1,12 @@
 .body {
   background-color: #2c2f33;
 }
+.container {
+}
 .banner {
   background-image: url(../files/d0d7bbada1102ab691f74678f4a9ccbb.png);
+  position: relative;
+  color: white;
 }
 .main {
   width: 50%;

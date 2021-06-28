@@ -159,6 +159,11 @@
   color: white;
   transition-duration: 0.9s;
 }
+
+#card-deck {
+  margin: 10px;
+}
+
 /*scrollbar*/
 ::-webkit-scrollbar {
   width: 10px;

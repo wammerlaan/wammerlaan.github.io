@@ -20,7 +20,7 @@ const darkTheme = function (event) {
   const title = document.querySelector(`.titlep1-rose`);
   title.classList.toggle("titlep1-dark");
 
-  localStorage.setItem()
+  localStorage.setItem(theme, darkTheme);
 
   if (darkModeBtn.textContent == `DarkMode`) {
     darkModeBtn.textContent = `LightMode`;
@@ -32,29 +32,27 @@ const darkTheme = function (event) {
 console.log(darkModeBtn);
 darkModeBtn.addEventListener("click", darkTheme);
 
-
-// BMIcalc.addEventListener("click", function (event) {
-//   console.log(heightInpt.value);
-//   console.log(weightInpt.value);
-//   let heightanswer = heightInpt.value;
-//   let weightanswer = weightInpt.value;
-//   let BMIanswer = (heightanswer * weightanswer) / 703;
-//   console.log(BMIanswer);
-//   let BMImessage = ``;
-//   if (BMIanswer > 40 && BMIanswer < 65) {
-//     BMImessage = `Your BMI is ` + BMIanswer + ` and that is extremely obese.`;
-//   } else if (BMIanswer > 30 && BMIanswer < 40) {
-//     BMImessage = `Your BMI is ` + BMIanswer + ` and that is obese.`;
-//   } else if (BMIanswer > 25 && BMIanswer < 30) {
-//     BMImessage = `Your BMI is ` + BMIanswer + ` and that is overweight.`;
-//   } else if (BMIanswer > 18 && BMIanswer < 25) {
-//     BMImessage = `Your BMI is ` + BMIanswer + ` and that is good!`;
-//   } else if (BMIanswer < 18) {
-//     BMImessage = `Your BMI is ` + BMIanswer + ` and this is underweight.`;
-//   } else {
-//     BMImessage = `Please put in normal numbers`;
-//   }
-//   const showAnswer = document.querySelector(`.answer`);
-//   showAnswer.textContent = BMImessage;
-// });
-
+BMIcalc.addEventListener("click", function () {
+  console.log(heightInpt.value);
+  console.log(weightInpt.value);
+  let heightanswer = heightInpt.value;
+  let weightanswer = weightInpt.value;
+  let BMIanswer = (heightanswer * weightanswer) / 703;
+  console.log(BMIanswer);
+  let BMImessage = ``;
+  if (BMIanswer > 40 && BMIanswer < 65) {
+    BMImessage = `Your BMI is ` + BMIanswer + ` and that is extremely obese.`;
+  } else if (BMIanswer > 30 && BMIanswer < 40) {
+    BMImessage = `Your BMI is ` + BMIanswer + ` and that is obese.`;
+  } else if (BMIanswer > 25 && BMIanswer < 30) {
+    BMImessage = `Your BMI is ` + BMIanswer + ` and that is overweight.`;
+  } else if (BMIanswer > 18 && BMIanswer < 25) {
+    BMImessage = `Your BMI is ` + BMIanswer + ` and that is good!`;
+  } else if (BMIanswer < 18) {
+    BMImessage = `Your BMI is ` + BMIanswer + ` and this is underweight.`;
+  } else {
+    BMImessage = `Please put in normal numbers`;
+  }
+  const showAnswer = document.querySelector(`.answer`);
+  showAnswer.textContent = BMImessage;
+});

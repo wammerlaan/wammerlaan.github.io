@@ -5,6 +5,8 @@ const searchBtn = document.querySelector("#search-addon");
 const title = document.querySelector(".title");
 const suggestionList = document.querySelector(".suggestionList");
 const pageBanner = document.querySelector(".banner");
+const header = document.querySelector(".headerGhibli");
+const mainGhibli = document.querySelector(".mainGhibli");
 
 let filmsLoaded = false;
 let allFilms;
@@ -42,6 +44,10 @@ suggestionList.addEventListener("click", function (event) {
       searchbarInput.remove();
       searchBtn.remove();
       suggestionList.remove();
+      pageBanner.style.backgroundImage =
+        "url('http://static1.squarespace.com/static/54fc8146e4b02a22841f4df7/5d6bab1fa464e500012f9288/5db05a4e0c35a77bf2ae9432/1576155500427/cover%252B12.jpg?format=1500w')";
+      mainGhibli.style.backgroundImage =
+        "url('https://images7.alphacoders.com/504/504644.png')";
     } else if (event.target.innerHTML == "Grave of the Fireflies") {
       // GRAVE OF THE FIREFLIES THEME
       console.log("grave works!");
